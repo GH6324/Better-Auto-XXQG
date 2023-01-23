@@ -2625,7 +2625,7 @@ function xxqg(userinfo) {
   }
   back();
   b = 1;
-  if (2 == meizhou) {
+  if (2 != meizhou) {
     toastLog("每周答题开始");
     text("我的").findOne().click();
     sleep(1000);
