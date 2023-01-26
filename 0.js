@@ -2561,7 +2561,7 @@ function xxqg(userinfo) {
   }
   /********获取用户姓名并读取本地数据*********/
   text("我的").findOne().click();
-  name = id("my_display_name").findOne().text();
+  // name = id("my_display_name").findOne().text();
   a = id("my_display_name").findOne(5000);
   a || (f = confirm("无法识别内容", "检测到新版‘我的’界面，官方限制无法识别出内容，请退回xxqgV2.41.0版及以下%n点击确定跳转下载历史版本"),
     sleep(800), back(), f && app.openUrl("https://www.wandoujia.com/apps/7920908/history_v23300"), exit());
